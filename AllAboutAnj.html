@@ -1,0 +1,114 @@
+<html>
+<head>
+	<title>All About Anj</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="container">
+	<nav id="sideNav">
+		<ul>
+		<li><a href="AllAboutAnj.html" target="_self">Home</a></li>
+		<li><a href="About Me/aboutme.html" target="_blank">About Me</a></li>
+		<li><a href="My Weeb Heart/weebheart.html" target="_blank">My Weeb Heart</a></li>
+		<li><a href="My Gallery/MyGallery.html" target="_blank">Albums</a></li>
+		</ul>            
+	</nav>
+        <img src="icon.png" id="menuBtn">
+        <img src="logo.png" id="logo">
+        
+<div class="content">
+<a href="" class="btn">My Bible Verses for Life</a>
+<div class="mySlides">
+  <h1>Be very careful, then, how you live — <br>not as unwise but as wise, making <br>the most of every opportunity, <br>because the days are evil.</h1>
+  <p>Ephesians 5:15-16</p>
+</div>
+
+<div class="mySlides">
+  <h1>Whoever pursues righteousness and <br>love finds life, prosperity, and honor.</h1>
+  <p>Proverbs 21:21</p>
+</div>
+
+<div class="mySlides">
+  <h1>Therefore do not worry about <br>tomorrow, for tomorrow will worry <br>about itself. Each day has<br> enough trouble of its own.</h1>
+  <p>Matthew 6:34</p>
+</div>
+
+<div class="mySlides">
+  <h1>Whoever heeds discipline <br>shows the way to life, but <br>whoever ignores correction<br> leads others astray.</h1>
+  <p>Proverbs 10:17</p>
+</div>
+
+<div class="mySlides">
+  <h1>Many waters cannot quench love; <br>rivers cannot wash it away. <br>If one were to give all the wealth<br> of his house for love, <br>it would be utterly scorned.</h1>
+  <p>Song of Solomon 8:7</p>
+</div>
+
+</div>
+
+<div class="arrow-icons">		
+<a class="prev" onClick="plusSlides(-1)"><img src="back-arrow-3095.svg"></a>
+<a class="next" onClick="plusSlides(1)"><img src="right-arrow-3094.svg"></a>
+</div>
+        
+ <img src="feature.png" class="profile">
+
+        
+        <div class="social-links">
+        	<table>
+            <tr>
+            <td><a href="https://www.facebook.com/anjkiso20/" target="_blank"><img src="facebook.png"></a></td>
+            <tr>
+            <td><a href="https://www.instagram.com/anjkiso/" target="_blank"><img src="instagram.png"></a></td>
+            <tr>
+            <td><a href="https://twitter.com/anjkiso" target="_blank"><img src="twitter.png"></a></td>
+            </tr>
+            </table>
+        </div>
+        
+    </div>
+    
+    
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn");
+var sideNav = document.getElementById("sideNav");
+	
+sideNav.style.right = "-250px";
+menuBtn.onclick = function() {
+	if(sideNav.style.right == "-250px") {
+		sideNav.style.right = "0px";
+	}
+	else{
+		sideNav.style.right = "-250px";
+	}
+}
+	
+	
+var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+  	showSlides(slideIndex += n);
+}
+
+	function currentSlide(n) {
+  	showSlides(slideIndex = n);
+}
+
+	function showSlides(n) {
+  	var i;
+  	var slides = document.getElementsByClassName("mySlides");
+  	if (n > slides.length) {slideIndex = 1}    
+  	if (n < 1) {slideIndex = slides.length}
+  	for (i = 0; i < slides.length; i++) {
+      	slides[i].style.display = "none";  
+ 	 }
+ 		slides[slideIndex-1].style.display = "block";  
+}
+</script>	
+
+
+</body>
+</html>
