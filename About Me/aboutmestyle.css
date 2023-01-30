@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	height: 120vh;
+	width: 100%;
+	background-image: url(abtmebackground.gif);
+	background-position: center;
+	background-size: cover;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	position: fixed;
+}
+
+#sideNav {
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	background: #F99;
+	z-index: 2;
+	transition: .5s;
+}
+
+nav ul {
+	margin-top: 130px;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 50px 20px;
+	
+}
+
+nav ul li a {
+	display: block;
+	text-align: center;
+	background: linear-gradient(45deg, #F90, #F69);
+	border-radius: 6px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+
+#menuBtn {
+	width: 50px;
+	position: fixed;
+	right: 45px;
+	top: 35px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#logo {
+	width: 100px;
+	position: fixed;
+	top: 35px;
+	left: 25px;
+	cursor: pointer;	
+}
+
+.icon {
+	width: 40px;
+	cursor: pointer;
+}
+
+/*START of editable content*/
+.gallery {
+	height: 75%;
+	position: relative;
+	top: 75px;
+	left: 70px;
+}
+
+.gallery-table img {
+	height: 65%;
+	position: absolute;
+	-webkit-filter: drop-shadow(4px 3.5px 0 #F60) 
+                    drop-shadow(-1px -1px 0 #F3F);
+    filter:drop-shadow(4px 3.5px 0 #F60) 
+           drop-shadow(-1px -1px 0 #F3F);
+}
+
+td img:hover {
+	filter: none;
+}
+
+.content {
+	background: rgba(255,182,193,0.5);
+	border-radius: 10px;
+	padding: 10px;
+	position: fixed;
+	width: 550px;
+	left: 500px;
+	top: 65px;
+}
+
+.content h1 {
+	font-size: 50px;
+	font-weight: 100;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	color: #232d60;
+}
+
+.content h3 {
+	font-size: 25px;
+	font-weight: 100;
+	margin-top: 24px;
+	margin-bottom: 15px;
+	color: #232d60;
+}
+
+.content p {
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #232d60;
+}
+
+.abtme-gallery tr td{
+	position: relative;
+	bottom: 75px;
+	left: 55px;
+}
+
+.abtme-table img {
+	height: 12%;
+	width: 80%;
+	filter: grayscale();
+	transition: filter 0.2s ease-in-out;
+	border-bottom-color: #F99;
+	-webkit-filter: drop-shadow(4px 3.5px 0 #F60) 
+                    drop-shadow(-1px -1px 0 #FCF);
+    filter:drop-shadow(4px 3.5px 0 #F60) 
+           drop-shadow(-1px -1px 0 #FCF);
+}
+
+/*END of editable content*/
+
+.social-links {
+	position: fixed;
+	left: 30px;
+	bottom: 50px;
+}
+
+.social-links img {
+	width: 40px;
+	padding: 12px;
+	filter: grayscale();
+	transition: filter 0.4s ease-in-out;
+}
+
+.social-links img:hover {
+	filter: none;
+}
+
+
+
+

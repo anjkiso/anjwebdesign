@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Gallery</title>
+<link rel="stylesheet" href="mygallery.css">
+<link rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+<div class="navigation">
+	<nav id="sideNav">
+		<ul>
+		<li><a href="AllAboutAnj.html" target="_self">Home</a></li>
+		<li><a href="About Me/aboutme.html" target="_blank">About Me</a></li>
+		<li><a href="My Weeb Heart/weebheart.html" target="_blank">My Weeb Heart</a></li>
+		<li><a href="Bible Verses/album.html" target="_blank">Albums</a></li>
+		</ul>            
+	</nav>
+        <img src="images/icon.png" id="menuBtn">
+</div>
+        
+<div class="container">
+	<div class="gallery">
+    	<a href="images/01.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/01.jpg">
+        </a>
+        <a href="images/02.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/02.jpg">
+        </a>
+        <a href="images/03.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/03.jpg">
+        </a>
+        <a href="images/04.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/04.jpg">
+        </a>
+        <a href="images/05.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/05.jpg">
+        </a>
+        <a href="images/06.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/06.jpg">
+        </a>
+        <a href="images/08.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/08.jpg">
+        </a>
+        <a href="images/09.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/09.jpg">
+        </a>
+        <a href="images/10.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/10.jpg">
+        </a>
+        <a href="images/12.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/12.jpg">
+        </a>
+        <a href="images/13.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/13.jpg">
+        </a>
+        <a href="images/14.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/14.jpg">
+        </a>
+        <a href="images/15.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/15.jpg">
+        </a>
+        <a href="images/16.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/16.jpg">
+        </a>
+        <a href="images/17.jpg" data-lightbox="Anj" data-title="caption01">
+        	<img src="images/17.jpg">
+        </a>
+	</div>
+</div>
+
+<script src="lightbox-plus-jquery.js"></script>
+<script>
+var menuBtn = document.getElementById("menuBtn");
+var sideNav = document.getElementById("sideNav");
+	
+sideNav.style.right = "-250px";
+menuBtn.onclick = function() {
+	if(sideNav.style.right == "-250px") {
+		sideNav.style.right = "0px";
+	}
+	else{
+		sideNav.style.right = "-250px";
+	}
+}
+</script>
+</body>
+</html>

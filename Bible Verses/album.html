@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Anj's Album</title>
+	<link rel="stylesheet" href="album.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="image one"></div>
+    <div class="image two"></div>
+    <div class="image three"></div>
+    <div class="image four"></div>
+    <div class="image five"></div>
+    <div class="image six"></div>
+    <div class="image seven"></div>
+    <div class="image eight"></div>
+    <div class="image nine"></div>
+    <div class="image ten"></div>
+    <div class="image eleven"></div>
+    <div class="image twelve"></div>
+    <div class="image thirteen"></div>
+    <div class="content">Anj's Album<br>
+    <a href="https://www.facebook.com/anjkiso20/" target="_blank"><img src="../facebook.png"></a>
+    <a href="https://www.instagram.com/anjkiso/" target="_blank"><img src="../instagram.png"></a>
+    <a href="https://twitter.com/anjkiso" target="_blank"><img src="../twitter.png"></a>
+    <a href="../AllAboutAnj.html" target="_self"><img src="../home.png"></a>
+    </div>
+    
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../uparrow.png"></button>
+    
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

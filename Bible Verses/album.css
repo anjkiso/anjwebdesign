@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: Helvetica, sans-serif;
+      }
+      .image {
+        height: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .one {
+        background-image: url(images/album07.jpg);
+      }
+      .two {
+        background-image: url(images/album08.jpg);
+      }
+      .three {
+        background-image: url(images/album09.jpg);
+      }
+      .four {
+        background-image: url(images/album15.jpg);
+      }
+      .five {
+        background-image: url(images/album6.jpg);
+      }
+      .six {
+        background-image: url(images/album11.jpg);
+      }
+      .seven {
+        background-image: url(images/album13.jpg);
+	  }
+	  .eight {
+        background-image: url(images/album05.jpg);
+	  }
+	  .nine {
+        background-image: url(images/album04.jpg);
+	  }
+	  .ten {
+        background-image: url(images/album03.jpg);
+	  }
+	  .eleven {
+        background-image: url(images/album02.jpg);
+	  }
+	  .twelve {
+        background-image: url(images/album1.jpg);
+	  }
+	  .thirteen {
+        background-image: url(images/album14.jpg);
+	  }
+      .content {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff0c2;
+		font-family: "Brush Script MT";
+        font-weight: bold;
+        font-size: 60px;
+        border: 8px solid #000000;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 420px;
+        padding: 15px;
+        text-align: center;
+      }
+	  
+	  
+.content img {
+	width: 40px;
+	padding: 12px;
+	filter: grayscale();
+	transition: filter 0.4s ease-in-out;
+}
+
+.content img:hover {
+	filter: none;
+}
+
+button img {
+	width: 40px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(96.5, 93.3, 76.9, 0.5);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 95px;
+}
