@@ -1,0 +1,88 @@
+* {
+margin: 0;
+padding: 0;
+}
+.container {
+height: 100vh;
+width: 100%;
+background-image:url(images/background.jpg);
+background-position: center;
+background-size: cover;
+padding-left: 5%;
+padding-right: 5%;
+box-sizing: border-box;
+position: relative;
+}
+.navbar {
+width: 100%;
+height: 15vh;
+margin: auto;
+display: flex;
+align-items: center;
+}
+.logo {
+width: 150px;
+cursor: pointer;
+}
+.menu {
+width: 80px;
+cursor: pointer;
+}
+nav {
+flex: 1;
+padding-left: 60px;
+}
+nav ul li {
+display: inline-block;
+list-style: none;
+margin: 8px 20px;
+}
+nav ul li a {
+text-decoration: none;
+color: #030;
+}
+.content h1 {
+font-size: 60px;
+font-weight: 100;
+margin-top: 30px;
+margin-bottom: 30px;
+color: #330;
+}
+.content p {
+margin-bottom: 30px;
+font-size: 20px;
+font-family:"Comic Sans MS", cursive;
+line-height: 1.5;
+color: #333;
+}
+.content {
+margin-top: 5%;
+margin-left: 5%;
+}
+.content .btn {
+display: inline-block;
+background: linear-gradient(45deg, #FC0, #F00);
+border-radius: 10px;
+padding: 10px 20px;
+box-sizing: border-box;
+text-decoration: none;
+color: #000;
+box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+.profile {
+height: 90%;
+position: absolute;
+bottom: 0;
+right: 160px;
+}
+.social-links {
+position: absolute;
+left: 90px;
+bottom: 50px;
+}
+.social-links a {
+text-decoration: none;
+color: #333;
+padding-right: 20px;
+font-size: 14px;
+}

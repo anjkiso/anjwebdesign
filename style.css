@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	height: 120vh;
+	width: 100%;
+	background-image: url(background-0.gif);
+	background-position: center;
+	background-size: cover;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+#sideNav {
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	background: #F99;
+	z-index: 2;
+	transition: .5s;
+}
+
+nav ul {
+	margin-top: 130px;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 50px 20px;
+	
+}
+
+nav ul li a {
+	display: block;
+	text-align: center;
+	background: linear-gradient(45deg, #F90, #F69);
+	border-radius: 6px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+
+#menuBtn {
+	width: 50px;
+	position: fixed;
+	right: 45px;
+	top: 35px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#logo {
+	width: 100px;
+	position: fixed;
+	top: 35px;
+	left: 25px;
+	cursor: pointer;	
+}
+
+.icon {
+	width: 40px;
+	cursor: pointer;
+}
+
+/* animated text */
+.angeline {
+	width: 720px;
+	cursor: pointer;
+}
+
+
+
+/* animated text */
+
+.content h1 {
+	font-size: 30px;
+	font-weight: 100;
+	margin-top: 24px;
+	margin-bottom: 15px;
+	color: #232d60;
+}
+
+.content p {
+	font-size: 20px;
+	color: #6a7199;
+}
+
+.content {
+	margin-left: 10%;
+	margin-top: 10%;
+}
+
+.content .btn {
+	display: inline-block;
+	background: linear-gradient(45deg, #FC0, #F00);
+	border-radius: 6px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+
+.arrow-icons {
+	position: absolute;
+	left: 180px;
+	top: 430px;;
+}
+
+.arrow-icons img {
+	width: 40px;
+	margin-right: 25px;
+}
+
+.arrow-icons a img:active {
+	transform: translateY(0) scale(1.2);
+}
+
+.profile {
+height: 85%;
+position: absolute;
+bottom: 0;
+right: 90px;
+}
+
+.social-links {
+	position: fixed;
+	left: 30px;
+	bottom: 50px;
+}
+
+.social-links img {
+	width: 40px;
+	padding: 12px;
+	filter: grayscale();
+	transition: filter 0.4s ease-in-out;
+}
+
+.social-links img:hover {
+	filter: none;
+}
+
+
+
+
